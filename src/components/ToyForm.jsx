@@ -19,7 +19,7 @@ function ToyForm({ onAddToy }) {
     const newToy = {
       name: formData.name,
       image: formData.image,
-      likes: 0  // Must start at 0
+      likes: 0
     }
 
     fetch('http://localhost:3001/toys', {

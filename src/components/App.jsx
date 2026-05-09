@@ -4,7 +4,7 @@ import ToyForm from './ToyForm'
 
 function App() {
   const [toys, setToys] = useState([])
-  const [showForm, setShowForm] = useState(false)
+  const [showForm, setShowForm] = useState(true)  // Changed to true so form is visible
 
   // GET all toys on page load
   useEffect(() => {
