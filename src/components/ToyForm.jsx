@@ -56,7 +56,7 @@ function ToyForm({ onAddToy }) {
           onChange={handleChange}
           required
         />
-        <button type="submit">Add Toy</button>
+        <button type="submit">Create New Toy</button>
       </form>
     </div>
   )
