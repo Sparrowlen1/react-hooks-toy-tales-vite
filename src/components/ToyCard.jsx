@@ -31,12 +31,12 @@ function ToyCard({ toy, onDeleteToy, onUpdateToy }) {
     <div className="toy-card" data-testid="toy-card">
       <h2>{toy.name}</h2>
       <img src={toy.image} alt={toy.name} className="toy-avatar" />
-      <p>{toy.likes} Likes</p>
+      <p>{toy.likes} Likes </p>
       <button className="like-btn" onClick={handleLike}>
-        Like ❤️
+        Like 
       </button>
       <button className="donate-btn" onClick={handleDelete}>
-        Donate to Goodwill
+        Donate to GoodWill
       </button>
     </div>
   )
