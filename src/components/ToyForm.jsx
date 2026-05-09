@@ -19,7 +19,7 @@ function ToyForm({ onAddToy }) {
     const newToy = {
       name: formData.name,
       image: formData.image,
-      likes: 0  // IMPORTANT: Initial likes must be 0
+      likes: 0
     }
 
     fetch('http://localhost:3001/toys', {
@@ -32,18 +32,18 @@ function ToyForm({ onAddToy }) {
       .then(res => res.json())
       .then(addedToy => {
         onAddToy(addedToy)
-        // Reset form after successful submission
         setFormData({ name: '', image: '' })
       })
   }
 
   return (
     <div className="form-container">
+      <h3>Add a Toy</h3>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
-          placeholder="Toy name"
+          placeholder="Enter a toy's name..."
           value={formData.name}
           onChange={handleChange}
           required
@@ -51,7 +51,7 @@ function ToyForm({ onAddToy }) {
         <input
           type="text"
           name="image"
-          placeholder="Image URL"
+          placeholder="Enter a toy's image URL..."
           value={formData.image}
           onChange={handleChange}
           required

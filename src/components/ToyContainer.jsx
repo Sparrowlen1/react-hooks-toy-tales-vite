@@ -11,7 +11,7 @@ function ToyContainer({ toys, onDeleteToy, onUpdateToy }) {
   ))
 
   return (
-    <div className="toy-container">
+    <div className="toy-container" data-testid="toy-container">
       {toyCards}
     </div>
   )

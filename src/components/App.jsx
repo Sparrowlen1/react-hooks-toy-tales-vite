@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import ToyContainer from './ToyContainer'  // ← Remove "components/"
-import ToyForm from './ToyForm'            // ← Remove "components/"
+import ToyContainer from './ToyContainer'
+import ToyForm from './ToyForm'
 
 function App() {
   const [toys, setToys] = useState([])
